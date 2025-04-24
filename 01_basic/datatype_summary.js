@@ -35,9 +35,34 @@
 //     education:btech,
 // }
 
-const myFirstFunction =function(){
-    console.log("hello world");
-}
- myFirstFunction();
+// const myFirstFunction =function(){
+//     console.log("hello world");
+// }
+//  myFirstFunction();
 
- console.log(typeof(myFirstFunction));
+//  console.log(typeof(myFirstFunction));
+
+// +++++++++++++++++ memory in java sript ++++++++++++
+// stack(primitive) heap (nonprimitive)
+
+// stack: Copied by value — changing one copy doesn't affect the other.
+
+// let myGithubName ="piyush";
+// let myInstaAccountName = myGithubName;
+// myInstaAccountName = "piyushGupta";
+// console.log(myGithubName);
+// console.log(myInstaAccountName);
+
+// heap:Copied by reference — multiple variables can point to the same object.
+
+let userOne = {
+    userEmail:  "raj@gmail.com",
+    userUpiId: "raj@ybl",
+}
+
+let userTwo=userOne;
+
+userTwo.userEmail="piyush@gmail.com";
+
+console.log(userOne.userEmail);
+console.log(userTwo.userEmail);
