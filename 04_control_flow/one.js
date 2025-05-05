@@ -22,8 +22,31 @@ const balance = 5000;
 // if(balance>1000) console.log("pass test "),console.log("pass test2"); // bad practise 
 
 
+// nested if else 
 
+// if (balance<500){
+//     console.log("balance less then 500")
+// } else if(balance<750){
+//     console.log("balance less the 750 ")
+// }
+// else if (balance <1000){
+//     console.log("balance less then 750")
+// }
+// else (
+//     console.log("balance less then 1200")
+// )
 
+const userLoggedIn = true;
+const userDebitCard = true;
+const userLoggedInGoogle = true;
+const userLoggedInEmail = false;
+
+if (userLoggedIn&& userDebitCard){
+    console.log("you are eligible to buy  course ");
+}
+if (userLoggedInGoogle||userLoggedInEmail){
+    console.log("user Logged in ")
+}
 
 
 
